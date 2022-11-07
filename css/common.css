@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=PT+Sans:ital,wght@0,100;0,200;0,400;0,700;1,400;1,700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-family: 'Bebas Neue', cursive;
+  --main-text-color: #222323;
+  --alternate-text-color: #f40106;
+  --paragraph-text-color: #717474;
+  --paragraph-text-color-accent-light: #e0e0e0;
+  --alternate-p-text-color: #fff;
+  --uperline-background-color: #d60307;
+  --countdown-bg-color:#cacfd9b0;
+}
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin:auto;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}

@@ -1,0 +1,199 @@
+.categories {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    padding-top: 90px;
+    padding-bottom: 60px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+@media (min-width:991px) {
+    .categories {
+        padding-top: 120px;
+        padding-bottom: 60px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        max-width: 1200px;
+        margin: auto;
+    }
+}
+
+.block {
+    max-width: 300px;
+    width: 100%;
+    min-height: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-end;
+    gap: 20px;
+    padding: 30px 15px;
+}
+
+.categories-arrivals {
+    background: url(../img/categories/sneakers.svg) 14.53% 36.12% / cover no-repeat;
+}
+
+.categories-trainers {
+    background: url(../img/categories/skateboard.png) 50% 50% / cover no-repeat;
+}
+
+.categories-sale {
+    background: url(../img/categories/sport_top_and_bottle.png) 23.28% 35.83% / cover no-repeat;
+}
+
+@media (min-width: 768px) and (max-width:990px) {
+    .categories-arrivals {
+        max-width: 50%;
+        flex-basis: 50%;
+    }
+
+    .categories-trainers {
+        max-width: 50%;
+        flex-basis: 50%
+    }
+
+    .categories-sale {
+        max-width: 50%;
+        flex-basis: 50%
+    }
+}
+
+@media (min-width: 991px) {
+    .categories-sale {
+        max-width: 50%;
+        flex-basis: 50%;
+    }
+
+    .categories-trainers {
+        flex-basis: 25%;
+        max-width: 25%;
+    }
+
+    .categories-arrivals {
+        flex-basis: 25%;
+        max-width: 25%;
+    }
+}
+
+.categories>div>p {
+    font-size: 2.4rem;
+    line-height: 1.14;
+    letter-spacing: 0;
+}
+
+.categories>div>a {
+    font-family: 'PT Sans', sans-serif;
+    position: relative;
+    font-size: 0.9rem;
+    text-decoration: none;
+    color: var(--main-text-color);
+    font-weight: 600;
+}
+
+.categories>div>a:hover {
+    font-size: 1.1rem;
+    transition: font-size .4s ease-in-out;
+}
+
+.categories>div>a:after {
+    content: " ";
+    display: block;
+    position: absolute;
+    left: 0;
+    width: 0;
+    height: 3px;
+    border-radius: 0.1rem;
+    background-color: var(--main-text-color);
+    transition: width 0.2s ease-in;
+}
+
+.categories>div>a:hover:after {
+    width: 100%;
+}
+
+.dot {
+    color: var(--alternate-text-color);
+}
+
+.categories-divider {
+    background-color: var(--alternate-text-color);
+    height: 2px;
+    width: 35%;
+}
+
+.categories-arrivals>.categories-divider {
+    width: 18%;
+}
+
+/* countdown styles */
+
+
+.categories__countdown-container {
+    min-width: 50%;
+    margin: auto;
+    margin-left: 70px;
+    margin-top: -20px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: var(--main-text-color);
+    font-family: 'PT Sans', sans-serif;
+}
+
+.categories__launch-time {
+    display: flex;
+    border: var(--paragraph-text-color) double 2px;
+    margin-left: -75px;
+    background-color: var(--countdown-bg-color);
+}
+
+.categories__launch-time div {
+    flex-basis: 100px;
+    padding: 4px;
+    text-align: center;
+    margin: 8px;
+}
+
+categories__launch-time div p {
+    font-size: 17px;
+}
+
+@media (min-width:768px) {
+    .categories__launch-time {
+        margin-right: 5px;
+    }
+
+    .categories__launch-time div p {
+        font-size: 30px;
+        margin-bottom: 2px;
+    }
+}
+
+@media (min-width:991px) {
+    .categories__launch-time {
+        margin-right: 46px;
+    }
+
+    .categories__launch-time div p {
+        font-size: 30px;
+        margin-bottom: 2px;
+    }
+
+}
+
+@media (min-width:1200px) {
+    .categories__launch-time {
+        margin-right: 56px;
+    }
+
+    .categories__launch-time div p {
+        font-size: 30px;
+    }
+}
